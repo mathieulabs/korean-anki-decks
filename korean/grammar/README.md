@@ -52,7 +52,7 @@ When you flip the card, you'll see:
 7. **Meaning section** - Definiton of the grammar point
 8. **All Examples section** - A collapsible list showing ALL example sentences for this grammar point
 9. **Details section** - Full lesson content from Korean Grammar in Use / content from Kimchi Reader depending on the side
-10. **Related** (if available) - Links to related grammar points
+10. **Related** (if available) - Links to related grammar points. This section is automatically generated based on **function tags** (grammar points with the same function tag are shown as related), and also includes **manual relations** that have been specifically added
 
 ### Interactive Elements
 
@@ -166,6 +166,8 @@ Each grammar point has a function tag that describes its grammatical purpose. Ex
 - `Korean_Grammar::Function::Quotations` - Quotation patterns
 - `Korean_Grammar::Function::Additional_Information` - Provides additional information
 - And more...
+
+**Note:** Function tags are used to automatically generate the **Related** section on cards. Grammar points sharing the same function tag will appear as related to each other. Additionally, some cards have **manual relations** that have been specifically added beyond the automatic function tag matching.
 
 #### Relations Tags
 - `Korean_Grammar::Relations::Has_Different_Meanings` - Grammar points that have multiple distinct meanings (each meaning has its own card)

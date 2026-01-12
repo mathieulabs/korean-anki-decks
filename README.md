@@ -9,12 +9,11 @@
   - [Optional Glassmorphism (CSS)](#optional-glassmorphism-css)
 - [Credits](#credits)
 - [Feedback](#feedback)
-- [License](#license)
 
 ##  Download
 
-* **Grammar Deck**: [Download](https://drive.google.com/file/d/1O2PAZyGvjX4w7UiVjaX8BuDE71Oc6Scp/view?usp=drive_link)
-* **Hanja Deck**: [Download](https://drive.google.com/file/d/1HcRvRjV2Y_nGwVnRZi_7GW7-3k8zzrQf/view?usp=drive_link)
+* **Grammar Deck**: **[Download](https://drive.google.com/file/d/1O2PAZyGvjX4w7UiVjaX8BuDE71Oc6Scp/view?usp=drive_link)**
+* **Hanja Deck**: **[Download](https://drive.google.com/file/d/1HcRvRjV2Y_nGwVnRZi_7GW7-3k8zzrQf/view?usp=drive_link)**
 
 ## Korean Grammar Deck
 
@@ -37,43 +36,60 @@
   </tr>
 </table>
 
-This deck focuses on **Korean grammar patterns**.
+### Content Sources
 
-It contains **every grammar point from _Korean Grammar in Use (KGIU)_**, as well as **additional points from the Kimchi Reader Grammar section**.
+- **Korean Grammar in Use (KGIU)**: Complete coverage of all grammar points from Beginner, Intermediate, and Advanced levels
+- **Kimchi Reader**: Every grammar points from the Kimchi Reader Grammar section
+- **Combined sentence pool**: All example sentences from both sources are included
 
-Each time a card appears, the **front** shows a **random example sentence** chosen from the card’s sentence pool, displayed with a **randomly selected font**.  
-On the **back**, the same randomly selected sentence appears at the top, together with the **focused grammar point and its meaning**, while all other available sentences are listed in the **“All examples”** section.
+---
 
-For the **Korean Grammar in Use** side, **the full lesson content** is included in the **Details** section, along with additional sections such as **related grammar points** and **comparisons**.
-Each card also has a **tag indicating its book level**: *Beginner*, *Intermediate*, or *Advanced*.
+### Card Features
 
-For the **Kimchi Reader** side, all the grammar point from Kimchi reader site is included.
+#### Front Side
+- Displays a **random example sentence** from the card's sentence pool
+- Uses a **randomly selected font** for variety
 
-The pool of sentence includes all exmaples sentences from both  sources.
+#### Back Side
+- Shows the same randomly selected sentence at the top
+- Displays the **focused grammar point and its meaning**
+- Lists all other available sentences in the **"All examples"** section
 
-You can **click on any highlighted grammar point**, which will take you directly to the corresponding **[Kimchi Reader grammar page](https://kimchi-reader.app/grammar)** or **[Korean Grammar in Use page](https://sayhikorean.blogspot.com/2018/10/korean-grammar-in-use-beginner.html)** 
+- **Full Korean Grammar in Use lesson content** and **Kimchi Reader content** included in their  respective **Details** section
+- Additional sections: **related grammar points** and **comparisons**
+- Each card has a **tag indicating its KGIU book level**: *Beginner*, *Intermediate*, or *Advanced*
+and **Frequency badge** from Kimchi Reader.
+- You can **click on any highlighted grammar point**, which will take you directly to the corresponding **[Kimchi Reader grammar page](https://kimchi-reader.app/grammar)** or **[Korean Grammar in Use page](https://sayhikorean.blogspot.com/2018/10/korean-grammar-in-use-beginner.html)** 
 
-There is **one card per meaning**.  
-So if a grammar point has **three different meanings**, the deck contains **three separate cards**, each with its own specific set of example sentences.
+---
 
-Common grammar points from **Korean Grammar in Use** and **Kimchi Reader** are merged into the same cards.  
-As a result, there are **three types of cards**:
+### Card Structure
 
-- **Merged**
-- **Korean Grammar in Use only**
-- **Kimchi Reader only**
+#### One Card Per Meaning
+- If a grammar point has **three different meanings**, the deck contains **three separate cards**
+- Each card has its own specific set of example sentences
 
-If you want to use **only one source**, you can hide one side on the merged cards and **suspend the “Only” cards** from the source you don’t want (see the [User Configuration](#user-configuration) section).
+#### Three Types of Cards
+1. **Merged**: Grammar points that exist in both KGIU and Kimchi Reader
+2. **Korean Grammar in Use only**: Points unique to KGIU
+3. **Kimchi Reader only**: Points unique to Kimchi Reader
+
+> 💡 **Tip**: If you want to use **only one source**, you can hide one side on the merged cards and **suspend the "Only" cards** from the source you don't want (see the [User Configuration](#user-configuration) section).
+
+---
+
+### Deck Organization
+
+- **Primary order**: Follows the **Korean Grammar in Use lesson order**
+- **Kimchi Reader–only cards**: Mixed into the KGIU lesson order based on:
+  - **Frequency** of usage
+  - **Relation** to KGIU grammar points
 
 
-The deck is ordered following the **Korean Grammar in Use lesson order**.  
-**Kimchi Reader–only cards** that are not covered in the books are **mixed into the KGIU lesson order**, and placed based on a combination of **frequency** and **their relation to KGIU grammar points**.
-
-
-## Study recommendation
+### Study recommendation
 
 My **personal recommendation** is to study **no more than 2–3 new cards per day**, alongside your normal reviews.  
-At this pace, you will finish the deck in approximately **143–214 days** (**428 cards total**).
+At this pace, you will have seen all the cards in approximately **143–214 days** (**428 cards total**).
 
 If you already know the early grammar points, I recommend going through them **quickly during the first few days** or **suspending them**.
 
@@ -105,16 +121,24 @@ For full documentation, see the dedicated README:
   </tr>
 </table>
 
-This deck helps build **recognition and understanding of commonly used Hanja** and their usage in Korean.
-  
-It contains **multiple sections** that can be easily **enabled or disabled** to suit individual preferences directly in the **HTML** (see the [**User Configuration**](#user-configuration) section below).
- 
-It is **ordered by 한자능력검정 급수** (8급, 7급, etc.).
- 
-My personal recommendation is to study **no more than 5 cards per day**, alongside your usual reviews.   
-With this pace, you will finish the deck in **about one year** (**1,948 cards total**).
+This deck helps build **recognition and understanding of commonly used Hanja**.
 
-<p><strong>For more details about this deck</strong> (tags, structure, and how it was built), <strong><a href="https://github.com/marbaret/anki-decks/blob/main/korean/hanja/README.md">see the dedicated README here</a></strong>.</p>
+---
+
+### Features
+
+- **Multiple sections** that can be easily **enabled or disabled** to suit individual preferences directly in the **card template** (see the [User Configuration](#user-configuration) section below)  
+
+
+- **Ordered by 한자능력검정 급수** (8급, 7급, etc.)
+
+### Study recommendation
+
+My **personal recommendation** is to study **3–5 cards per day**, alongside your usual reviews.  
+At this pace, you will have seen all the cards in approximately **390–649 days** (**1,948 cards total**).
+
+For more details about this deck, including **tags, structure, and how it was built**, see the dedicated README:  
+👉 **[Deck README](https://github.com/marbaret/anki-decks/blob/main/korean/hanja/README.md)**
 
 ## User Configuration
 
@@ -161,7 +185,7 @@ This deck has been created using the GitHub repo from **[Kimchi Reader's](https:
 And all the lesson from Korean Grammar in Use books.
 
 **I strongly encourage you to try out [Kimchi Reader](https://kimchi-reader.app/) !**  
-It's the most amazing tool I've used to learn Korean and the best way to build a vocab deck using its sentence mining feature. There is a 1-week free trial, so honestly just give it a try.  
+It's the most amazing tool I've used to learn Korean and the best way to build a vocab deck using its sentence mining feature. There is a 1-week free trial, so honestly just give it a try. If you'd like to extend your trial to 1 month, feel free to contact me on Discord and I can provide you with a code : **mathieu.exe**.  
 
 There is an amazing **[Discord server](https://discord.gg/abRkZ2hhSA)** with people who will help you if you have any questions.
 
