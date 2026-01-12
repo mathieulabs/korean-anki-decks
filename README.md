@@ -8,6 +8,7 @@
 - [User Configuration](#user-configuration)
   - [Optional Glassmorphism (CSS)](#optional-glassmorphism-css)
 - [Credits](#credits)
+- [Feedback](#feedback)
 - [License](#license)
 
 ##  Download
@@ -17,27 +18,13 @@
 
 ## Korean Grammar Deck
 
-This deck focuses on **Korean grammar patterns**.  
-
-Each time a card comes up, the **front** shows a **random example sentence** from the card’s sentence pool, with a **randomly selected font**.  
-On the **back**, the randomly selected sentence appears at the top, and you can see all other possible sentences in the **“all examples”** section.  
-
-You can **click on any highlighted grammar point**, which will link directly to the related **[Kimchi Reader](https://kimchi-reader.app/grammar) grammar page**.
-
-There is **one card per meaning**, so if a grammar point has **three meanings**, the deck contains **three separate cards**, each with its own specific example sentences.  
-It is ordered by frequency, with a small gap between cards of the **same grammar point** but **different meanings**. 
-
-My **personal recommendation** is to study **no more than 2–3 cards per day**, alongside your usual reviews.   
-With this pace, you will finish the deck in **about 110–160 days** (**332 cards total**).
-
-
 ### Card previews
 
 **Front example**
 
 <table>
   <tr>
-    <img src="korean/grammar/screenshots/front1.png">
+    <img src="korean/grammar/screenshots/altfront1.png">
   </tr>
 </table>
 
@@ -45,26 +32,59 @@ With this pace, you will finish the deck in **about 110–160 days** (**332 card
 
 <table>
   <tr>
-    <img src="korean/grammar/screenshots/back1.png">
+    <img src="korean/grammar/screenshots/altback1.png">
 
   </tr>
 </table>
 
-<p><strong>For more details about this deck</strong> (tags, structure, and how it was built),
-<strong><a href="https://github.com/marbaret/anki-decks/blob/main/korean/grammar/README.md">see the dedicated README here</a></strong>.</p>
+This deck focuses on **Korean grammar patterns**.
+
+It contains **every grammar point from _Korean Grammar in Use (KGIU)_**, as well as **additional points from the Kimchi Reader Grammar section**.
+
+Each time a card appears, the **front** shows a **random example sentence** chosen from the card’s sentence pool, displayed with a **randomly selected font**.  
+On the **back**, the same randomly selected sentence appears at the top, together with the **focused grammar point and its meaning**, while all other available sentences are listed in the **“All examples”** section.
+
+For the **Korean Grammar in Use** side, **the full lesson content** is included in the **Details** section, along with additional sections such as **related grammar points** and **comparisons**.
+Each card also has a **tag indicating its book level**: *Beginner*, *Intermediate*, or *Advanced*.
+
+For the **Kimchi Reader** side, all the grammar point from Kimchi reader site is included.
+
+The pool of sentence includes all exmaples sentences from both  sources.
+
+You can **click on any highlighted grammar point**, which will take you directly to the corresponding **[Kimchi Reader grammar page](https://kimchi-reader.app/grammar)** or **[Korean Grammar in Use page](https://sayhikorean.blogspot.com/2018/10/korean-grammar-in-use-beginner.html)** 
+
+There is **one card per meaning**.  
+So if a grammar point has **three different meanings**, the deck contains **three separate cards**, each with its own specific set of example sentences.
+
+Common grammar points from **Korean Grammar in Use** and **Kimchi Reader** are merged into the same cards.  
+As a result, there are **three types of cards**:
+
+- **Merged**
+- **Korean Grammar in Use only**
+- **Kimchi Reader only**
+
+If you want to use **only one source**, you can hide one side on the merged cards and **suspend the “Only” cards** from the source you don’t want (see the [User Configuration](#user-configuration) section).
+
+
+The deck is ordered following the **Korean Grammar in Use lesson order**.  
+**Kimchi Reader–only cards** that are not covered in the books are **mixed into the KGIU lesson order**, and placed based on a combination of **frequency** and **their relation to KGIU grammar points**.
+
+
+## Study recommendation
+
+My **personal recommendation** is to study **no more than 2–3 new cards per day**, alongside your normal reviews.  
+At this pace, you will finish the deck in approximately **143–214 days** (**428 cards total**).
+
+If you already know the early grammar points, I recommend going through them **quickly during the first few days** or **suspending them**.
+
+There are many more details about this deck, including **tags, user configuration, structure, and how it was built**.  
+For full documentation, see the dedicated README:  
+👉 **[Deck README](https://github.com/marbaret/anki-decks/blob/main/korean/grammar/README.md)**
+👉 **[How to add examples](https://github.com/marbaret/anki-decks/blob/main/korean/grammar/adding_examples/README.md)**
+
+
 
 ## Hanja Deck
-
-This deck helps build **recognition and understanding of commonly used Hanja** and their usage in Korean.
-  
-It contains **multiple sections** that can be easily **enabled or disabled** to suit individual preferences directly in the **HTML** (see the [**User Configuration**](#user-configuration) section below).
- 
-It is **ordered by 한자능력검정 급수** (8급, 7급, etc.).
- 
-My personal recommendation is to study **no more than 5 cards per day**, alongside your usual reviews.   
-With this pace, you will finish the deck in **about one year** (**1,948 cards total**).
-
-
 
 ### Card previews
 
@@ -85,11 +105,20 @@ With this pace, you will finish the deck in **about one year** (**1,948 cards to
   </tr>
 </table>
 
+This deck helps build **recognition and understanding of commonly used Hanja** and their usage in Korean.
+  
+It contains **multiple sections** that can be easily **enabled or disabled** to suit individual preferences directly in the **HTML** (see the [**User Configuration**](#user-configuration) section below).
+ 
+It is **ordered by 한자능력검정 급수** (8급, 7급, etc.).
+ 
+My personal recommendation is to study **no more than 5 cards per day**, alongside your usual reviews.   
+With this pace, you will finish the deck in **about one year** (**1,948 cards total**).
+
 <p><strong>For more details about this deck</strong> (tags, structure, and how it was built), <strong><a href="https://github.com/marbaret/anki-decks/blob/main/korean/hanja/README.md">see the dedicated README here</a></strong>.</p>
 
 ## User Configuration
 
-Both decks include a <strong>USER CONFIGURATION AREA</strong> directly inside the <strong>Front</strong> and <strong>Back</strong> HTML of the cards.
+Both decks include a <strong>USER CONFIGURATION AREA</strong> directly inside the <strong>Front</strong> and <strong>Back</strong> JavaScript of the cards.
 
 This section allows you to customize the deck behavior and appearance (for example: display options, fonts, or other variables) <strong>without touching the core logic</strong>.
 
@@ -98,7 +127,7 @@ To modify it:
 1. Open Anki
 2. Go to <strong>Browse</strong> → select the deck
 3. Click <strong>Cards…</strong>
-4. Edit the values inside the <strong>USER CONFIGURATION AREA</strong> in the Front and/or Back HTML
+4. Edit the values inside the <strong>USER CONFIGURATION AREA</strong> in the Front and/or Back JavaScript
 
 ### Configuration preview
 
@@ -129,6 +158,7 @@ To configure it:
 ### Grammar Deck
 
 This deck has been created using the GitHub repo from **[Kimchi Reader's](https://kimchi-reader.app/grammar) grammar section**.  
+And all the lesson from Korean Grammar in Use books.
 
 **I strongly encourage you to try out [Kimchi Reader](https://kimchi-reader.app/) !**  
 It's the most amazing tool I've used to learn Korean and the best way to build a vocab deck using its sentence mining feature. There is a 1-week free trial, so honestly just give it a try.  
@@ -161,9 +191,11 @@ All credits go to Retro and to the creator of the other deck.
 
 Find **Retro's Blog site** **[here](https://retrolearnskorean.blogspot.com/)**.
 
-### More
+### Feedback
 
 If you have any questions, suggestions, or issues, don’t hesitate to contact me on Discord: **mathieu.exe**
+
+I welcome all suggestions and feedback, and I'll do my best to correct any errors you find.
 
 ## License
 
