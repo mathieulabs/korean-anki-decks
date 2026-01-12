@@ -12,7 +12,7 @@
 
 ##  Download
 
-* **Grammar Deck**: **[Download](https://drive.google.com/file/d/1P1zXPIj2_O3HuJEHf0cxrX07x-i5UaU6/view?usp=drive_link)**
+* **Grammar Deck**: **[Download](https://drive.google.com/file/d/1iyJzeke8xSLeaENRkmn0fXF0F04iY_H0/view?usp=drive_link)**
 * **Hanja Deck**: **[Download](https://drive.google.com/file/d/1Jk50ef0Csnr9899bVjqkkxCO-ImFEHYV/view?usp=drive_link)**
 
 ## Korean Grammar Deck
@@ -23,17 +23,17 @@
 
 <table>
   <tr>
-    <img src="korean/grammar/screenshots/altfront1.png">
-  </tr>
-</table>
+<p align="center">
+  <img src="korean/grammar/screenshots/altfront1.png" alt="Front Example">
+</p>
+</tr>
 
 **Back example**
-
-<table>
-  <tr>
-    <img src="korean/grammar/screenshots/altback1.png">
-
-  </tr>
+<tr>
+<p align="center">
+  <img src="korean/grammar/screenshots/altback1.png" alt="Back Example">
+</p>
+</tr>
 </table>
 
 ### Content Sources
