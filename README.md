@@ -31,7 +31,7 @@
 **Back example**
 <tr>
 <p align="center">
-  <img src="korean/grammar/screenshots/" alt="Back Example">
+  <img src="korean/grammar/screenshots/altback1.png" alt="Back Example">
 </p>
 </tr>
 </table>
