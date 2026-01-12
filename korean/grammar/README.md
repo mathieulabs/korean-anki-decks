@@ -148,29 +148,29 @@ The deck is organized following the **Korean Grammar in Use lesson order**. This
 Each card has tags that help you organize your study:
 
 #### Level Tags
-- `Korean_Grammar::Level::Beginner` - From KGIU Beginner book
-- `Korean_Grammar::Level::Intermediate` - From KGIU Intermediate book
-- `Korean_Grammar::Level::Advanced` - From KGIU Advanced book
+- `문법::Level::Beginner` - From KGIU Beginner book
+- `문법::Level::Intermediate` - From KGIU Intermediate book
+- `문법::Level::Advanced` - From KGIU Advanced book
 
 #### Source Tags
-- `Korean_Grammar::Type::KGIU_Only` - Only in KGIU, not in Kimchi Reader
-- `Korean_Grammar::Type::Kimchi_Only` - Only in Kimchi Reader, not in KGIU
-- `Korean_Grammar::Type::Merged` - Appears in both sources
+- `문법::Type::KGIU_Only` - Only in KGIU, not in Kimchi Reader
+- `문법::Type::Kimchi_Only` - Only in Kimchi Reader, not in KGIU
+- `문법::Type::Merged` - Appears in both sources
 
 #### Function Tags
 Each grammar point has a function tag that describes its grammatical purpose. Examples include:
-- `Korean_Grammar::Function::Cause_and_Effect` - Expresses cause and effect relationships
-- `Korean_Grammar::Function::Comparison` - Used for comparisons
-- `Korean_Grammar::Function::Particle` - Grammatical particles
-- `Korean_Grammar::Function::Endings` - Sentence endings
-- `Korean_Grammar::Function::Quotations` - Quotation patterns
-- `Korean_Grammar::Function::Additional_Information` - Provides additional information
+- `문법::Function::Cause_and_Effect` - Expresses cause and effect relationships
+- `문법::Function::Comparison` - Used for comparisons
+- `문법::Function::Particle` - Grammatical particles
+- `문법::Function::Endings` - Sentence endings
+- `문법::Function::Quotations` - Quotation patterns
+- `문법::Function::Additional_Information` - Provides additional information
 - And more...
 
 **Note:** Function tags are used to automatically generate the **Related** section on cards. Grammar points sharing the same function tag will appear as related to each other. Additionally, some cards have **manual relations** that have been specifically added beyond the automatic function tag matching.
 
 #### Relations Tags
-- `Korean_Grammar::Relations::Has_Different_Meanings` - Grammar points that have multiple distinct meanings (each meaning has its own card)
+- `문법::Relations::Has_Different_Meanings` - Grammar points that have multiple distinct meanings (each meaning has its own card)
 
 ### Using Tags
 
@@ -182,7 +182,7 @@ You can use Anki's browser to:
 
 **Example:** If you only want to study KGIU content, you can:
 1. Hide the Kimchi side on merged cards (see [User Configuration](#user-configuration) section)
-2. Suspend all cards with tag `Korean_Grammar::Type::Kimchi_Only`
+2. Suspend all cards with tag `문법::Type::Kimchi_Only`
 
 ---
 

@@ -12,8 +12,8 @@
 
 ##  Download
 
-* **Grammar Deck**: **[Download](https://drive.google.com/file/d/1O2PAZyGvjX4w7UiVjaX8BuDE71Oc6Scp/view?usp=drive_link)**
-* **Hanja Deck**: **[Download](https://drive.google.com/file/d/1HcRvRjV2Y_nGwVnRZi_7GW7-3k8zzrQf/view?usp=drive_link)**
+* **Grammar Deck**: **[Download](https://drive.google.com/file/d/1P1zXPIj2_O3HuJEHf0cxrX07x-i5UaU6/view?usp=drive_link)**
+* **Hanja Deck**: **[Download](https://drive.google.com/file/d/1Jk50ef0Csnr9899bVjqkkxCO-ImFEHYV/view?usp=drive_link)**
 
 ## Korean Grammar Deck
 
@@ -145,6 +145,8 @@ For more details about this deck, including **tags, structure, and how it was bu
 Both decks include a <strong>USER CONFIGURATION AREA</strong> directly inside the <strong>Front</strong> and <strong>Back</strong> JavaScript of the cards.
 
 This section allows you to customize the deck behavior and appearance (for example: display options, fonts, or other variables) <strong>without touching the core logic</strong>.
+
+Additionally, in the <strong>Styling (CSS)</strong> section, you'll find easily editable variables at the top that allow you to change the appearance of everything.
 
 To modify it:
 
