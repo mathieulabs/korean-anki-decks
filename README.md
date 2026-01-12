@@ -217,7 +217,7 @@ All credits go to Retro and to the creator of the other deck.
 
 Find **Retro's Blog site** **[here](https://retrolearnskorean.blogspot.com/)**.
 
-### Feedback
+## Feedback
 
 If you have any questions, suggestions, or issues, don’t hesitate to contact me on Discord: **mathieu.exe**
 
