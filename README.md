@@ -12,7 +12,7 @@
 
 ##  Download
 
-* **Grammar Deck**: **[Download](https://drive.google.com/file/d/1NSyDoaA_t2IiGI06PXNlrejlNCUl4dXj/view?usp=drive_link)**
+* **Grammar Deck**: **[Download](https://drive.google.com/file/d/1gkn65_wfPrAFK2TA_UPWBI8uLlj0KZJk/view?usp=drive_link)**
 * **Hanja Deck**: **[Download](https://drive.google.com/file/d/1sgeYeMjTg9cCw8v90FMjFrDEMKfFxgL1/view?usp=drive_link)**
 
 ## Korean Grammar Deck
