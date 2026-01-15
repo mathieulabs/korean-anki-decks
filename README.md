@@ -12,8 +12,8 @@
 
 ##  Download
 
-* **Grammar Deck**: **[Download](https://drive.google.com/file/d/1NNnUwNXwnG8ijL45pLQrW6Lchf22CMGN/view?usp=drive_link)**
-* **Hanja Deck**: **[Download](https://drive.google.com/file/d/1QnSsbmZpfURMuCx01ZT4Vljyhv_cZifF/view?usp=drive_link)**
+* **Grammar Deck**: **[Download](https://drive.google.com/file/d/1NSyDoaA_t2IiGI06PXNlrejlNCUl4dXj/view?usp=drive_link)**
+* **Hanja Deck**: **[Download](https://drive.google.com/file/d/1sgeYeMjTg9cCw8v90FMjFrDEMKfFxgL1/view?usp=drive_link)**
 
 ## Korean Grammar Deck
 
@@ -43,6 +43,7 @@
 - **Combined sentence pool**: All example sentences from both sources are included
 
 ---
+
 
 ### Card Features
 
