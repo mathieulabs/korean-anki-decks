@@ -489,7 +489,6 @@ This ensures sentences with source-specific vocabulary or context appear with th
 - **KGIU-only cards:** 89 
 - **Kimchi-only cards:** 105 
 
-## Getting Help
 ---
 
 ## Feedback
