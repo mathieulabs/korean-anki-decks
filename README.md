@@ -12,7 +12,7 @@
 
 ##  Download
 
-* **Grammar Deck**: **[Download](https://drive.google.com/file/d/1cN4VhH6Y6GfTzLuudz1J0hLI22IOm7yg/view?usp=drive_link)**
+* **Grammar Deck**: **[Download](https://drive.google.com/file/d/1IjDUYlDbSSAxBu-3a9AWHJZjx8Gl1k4Q/view?usp=drive_link)**
 * **Hanja Deck**: **[Download](https://drive.google.com/file/d/1sgeYeMjTg9cCw8v90FMjFrDEMKfFxgL1/view?usp=drive_link)**
 
 ### Ankiweb :
