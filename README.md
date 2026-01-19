@@ -12,8 +12,14 @@
 
 ##  Download
 
-* **Grammar Deck**: **[Download](https://drive.google.com/file/d/1uDDDUAKHn2ZSe381Zv3ur-HNAJXU9FJ6/view?usp=drive_link)**
+* **Grammar Deck**: **[Download](https://drive.google.com/file/d/1cN4VhH6Y6GfTzLuudz1J0hLI22IOm7yg/view?usp=drive_link)**
 * **Hanja Deck**: **[Download](https://drive.google.com/file/d/1sgeYeMjTg9cCw8v90FMjFrDEMKfFxgL1/view?usp=drive_link)**
+
+# Ankiweb : 
+
+[Grammar Deck](https://ankiweb.net/shared/info/367877479) | [Hanja Deck](https://ankiweb.net/shared/info/441246030)
+
+If you like the decks and want to show some support, you can rate it on Ankiweb and give the GitHub repo a star, Thank you <3
 
 ## Korean Grammar Deck
 
@@ -50,6 +56,7 @@
 #### Front Side
 - Displays a **random example sentence** from the card's sentence pool
 - Uses a **randomly selected font** for variety
+- Displays the **grammar point with a spoiler** (removed by default on certain early cards to reduce ambiguity for beginners). Note that you can entirely customize the behavior of the grammar point shown on the front (e.g., to have it on top with no spoiler and focus the review on that). For more information, see the [User Configuration](#user-configuration) section.
 
 #### Back Side
 - Shows the same randomly selected sentence at the top
@@ -90,7 +97,7 @@ and **Frequency badge** from Kimchi Reader.
 ### Study recommendation
 
 My **personal recommendation** is to study **no more than 2–3 new cards per day**, alongside your normal reviews.  
-At this pace, you will have seen all the cards in approximately **143–214 days** (**428 cards total**).
+At this pace, you will have seen all the cards in approximately **143–214 days** (**427 cards total**).
 
 If you already know the early grammar points, I recommend going through them **quickly during the first few days** or **suspending them**.
 
