@@ -1,4 +1,4 @@
-# Korean Anki Decks
+# Mathieu’s Korean Anki Decks
 
 <p align="center">
   <img src="korean/cover long.png" alt="Front Example">
