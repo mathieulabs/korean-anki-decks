@@ -1,5 +1,9 @@
 # Korean Anki Decks
 
+<p align="center">
+  <img src="korean/cover.png" alt="Front Example">
+</p>
+
 ## Table of Contents
 
 - [Download](#-download)
