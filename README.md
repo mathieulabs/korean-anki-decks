@@ -1,7 +1,7 @@
 # Korean Anki Decks
 
 <p align="center">
-  <img src="korean/cover.png" alt="Front Example">
+  <img src="korean/cover long.png" alt="Front Example">
 </p>
 
 ## Table of Contents
