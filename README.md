@@ -31,8 +31,6 @@ If you like the decks and want to show some support, you can rate it on Ankiweb 
 
 ## Korean Grammar Deck
 
-### Card previews
-
 **Front example**
 
 <table>
@@ -118,7 +116,6 @@ For full documentation, see the dedicated README:
 
 ## Hanja Deck
 
-### Card previews
 
 **Front example**
 
