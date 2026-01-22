@@ -7,12 +7,13 @@
 ## Table of Contents
 
 - [Download](#-download)
+- [Feedback](#feedback)
 - [Korean Grammar Deck](#korean-grammar-deck)
 - [Hanja Deck](#hanja-deck)
 - [User Configuration](#user-configuration)
   - [Optional Glassmorphism (CSS)](#optional-glassmorphism-css)
 - [Credits](#credits)
-- [Feedback](#feedback)
+
 
 ##  Download
 
@@ -28,6 +29,36 @@ Decks on AnkiWeb can be temporarily unavailable. After each update, it takes up 
 In the meantime, you can download it from GitHub - it will always be the most recent version. 
 
 If you like the decks and want to show some support, you can rate it on Ankiweb and give the GitHub repo a star, Thank you <3
+
+### Updating the deck
+
+<details>
+<summary><strong>Click here to see how to update the deck</strong></summary>
+
+<br>
+
+> ⚠️ **Important:** When updating your deck, **do not open the Browse window**.  
+> Stay on Anki’s **main screen immediately after launching the app**, otherwise the cards you’re currently viewing **will not be updated correctly**.
+
+**How to update:**
+1. Download the latest `.apkg` version of the deck  
+2. Double-click it to import into Anki  
+3. Select **"Merge Note Types"** when prompted  
+
+Anki will update the card templates automatically.
+
+> **Note:** The `AllExamples` field is no longer used. After updating, you can safely delete it from your note type if you want to clean things up.
+
+> **Don't worry:** Re-importing the deck **preserves your progress and scheduling**. You won't lose any reviews!
+
+</details>
+
+
+## Feedback
+
+If you have any questions, suggestions, or issues, don’t hesitate to contact me on Discord: **mathieu.exe**
+
+I welcome all suggestions and feedback, and I'll do my best to correct any errors you find.
 
 ## Korean Grammar Deck
 
@@ -229,12 +260,6 @@ I also added fields with data scraped from **[Wiktionary](https://en.wiktionary.
 All credits go to Retro and to the creator of the other deck.  
 
 Find **Retro's Blog site** **[here](https://retrolearnskorean.blogspot.com/)**.
-
-## Feedback
-
-If you have any questions, suggestions, or issues, don’t hesitate to contact me on Discord: **mathieu.exe**
-
-I welcome all suggestions and feedback, and I'll do my best to correct any errors you find.
 
 ## License
 
