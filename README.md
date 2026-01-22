@@ -7,11 +7,12 @@
 ## Table of Contents
 
 - [Download](#-download)
-- [Feedback](#feedback)
+
 - [Korean Grammar Deck](#korean-grammar-deck)
 - [Hanja Deck](#hanja-deck)
 - [User Configuration](#user-configuration)
   - [Optional Glassmorphism (CSS)](#optional-glassmorphism-css)
+- [Feedback](#feedback)
 - [Credits](#credits)
 
 
@@ -37,7 +38,8 @@ If you like the decks and want to show some support, you can rate it on Ankiweb 
 
 <br>
 
-> ⚠️ **Important:** When updating your deck, **do not open the Browse window**.  
+> [!IMPORTANT]
+> **Important:** When updating your deck, **do not open the Browse window**.  
 > Stay on Anki’s **main screen immediately after launching the app**, otherwise the cards you’re currently viewing **will not be updated correctly**.
 
 **How to update:**
@@ -52,13 +54,6 @@ Anki will update the card templates automatically.
 > **Don't worry:** Re-importing the deck **preserves your progress and scheduling**. You won't lose any reviews!
 
 </details>
-
-
-## Feedback
-
-If you have any questions, suggestions, or issues, don’t hesitate to contact me on Discord: **mathieu.exe**
-
-I welcome all suggestions and feedback, and I'll do my best to correct any errors you find.
 
 ## Korean Grammar Deck
 
@@ -260,6 +255,12 @@ I also added fields with data scraped from **[Wiktionary](https://en.wiktionary.
 All credits go to Retro and to the creator of the other deck.  
 
 Find **Retro's Blog site** **[here](https://retrolearnskorean.blogspot.com/)**.
+
+## Feedback
+
+If you have any questions, suggestions, or issues, don’t hesitate to contact me on Discord: **mathieu.exe**
+
+I welcome all suggestions and feedback, and I'll do my best to correct any errors you find.
 
 ## License
 
