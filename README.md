@@ -7,7 +7,6 @@
 ## Table of Contents
 
 - [Download](#-download)
-
 - [Korean Grammar Deck](#korean-grammar-deck)
 - [Hanja Deck](#hanja-deck)
 - [User Configuration](#user-configuration)
