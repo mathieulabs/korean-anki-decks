@@ -28,7 +28,7 @@
 Decks on AnkiWeb can be temporarily unavailable. After each update, it takes up to 24 hours for the deck to be available again. 
 In the meantime, you can download it from GitHub - it will always be the most recent version. 
 
-If you like the decks and want to show some support, you can rate it on Ankiweb and give the GitHub repo a star, Thank you <3 
+If you like the decks and want to show some support, you can rate it on Ankiweb and give the GitHub repo a star, Thank you ❤️
 
 ### Updating the decks
 
