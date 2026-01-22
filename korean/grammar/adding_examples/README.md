@@ -6,7 +6,7 @@
 >
 > ⚠️ **Important:** When updating your deck, **do not open the Browse window**.  
 > Stay on Anki’s **main screen immediately after launching the app**, otherwise the cards you’re currently viewing **will not be updated correctly**.
->> **How to update:** Simply download the latest `.apkg` version of the deck and double-click it to import. Select **'Merge Note Types'**. Anki will update the card templates automatically.
+> **How to update:** Simply download the latest `.apkg` version of the deck and double-click it to import. Select **'Merge Note Types'**. Anki will update the card templates automatically.
 
 > **Note:** The `AllExamples` field is no longer used. After updating, you can safely delete it from your note type if you wish to clean up.
 >
