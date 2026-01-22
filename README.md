@@ -39,7 +39,7 @@ If you like the decks and want to show some support, you can rate it on Ankiweb 
 <br>
 
 > ⚠️⚠️⚠️ **Important:** When updating your deck, **do not open the Browse window**.  
-> Stay on Anki’s **main screen immediately after launching the app**, otherwise the cards you’re currently viewing **will not be updated correctly**.
+> Stay on Anki’s **main screen immediately after launching the app**, otherwise the cards you’re currently viewing **may not be updated correctly**.
 
 **How to update:**
 1. Download the latest `.apkg` version of the deck  
