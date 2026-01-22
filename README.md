@@ -28,30 +28,31 @@
 Decks on AnkiWeb can be temporarily unavailable. After each update, it takes up to 24 hours for the deck to be available again. 
 In the meantime, you can download it from GitHub - it will always be the most recent version. 
 
-If you like the decks and want to show some support, you can rate it on Ankiweb and give the GitHub repo a star, Thank you <3
+If you like the decks and want to show some support, you can rate it on Ankiweb and give the GitHub repo a star, Thank you <3 
 
-### Updating the deck
+### Updating the decks
 
 <details>
-<summary><strong>Click here to see how to update the deck</strong></summary>
+<summary><strong>Click here to see how to update the decks</strong></summary>
 
 <br>
 
-> ⚠️⚠️⚠️ **Important:** When updating your deck, **do not open the Browse window**.  
+> ⚠️⚠️⚠️ **Important:** When updating your decks, **do not open the Browse window**.  
 > Stay on Anki’s **main screen immediately after launching the app**, otherwise the cards you’re currently viewing **may not be updated correctly**.
 
 **How to update:**
-1. Download the latest `.apkg` version of the deck  
-2. Double-click it to import into Anki  
+1. Download the latest `.apkg` versions of the decks  
+2. Double-click them to import into Anki  
 3. Select **"Merge Note Types"** when prompted  
 
 Anki will update the card templates automatically.
 
-> **Note:** The `AllExamples` field is no longer used. After updating, you can safely delete it from your note type if you want to clean things up.
+> **Note (Grammar Deck only):** The `AllExamples` field is no longer used. After updating the **Grammar Deck**, you can safely delete it from the note type if you want to clean things up.
 
-> **Don't worry:** Re-importing the deck **preserves your progress and scheduling**. You won't lose any reviews!
+> **Don't worry:** Re-importing the decks **preserves your progress and scheduling**. You won't lose any reviews!
 
 </details>
+
 
 ## Korean Grammar Deck
 
