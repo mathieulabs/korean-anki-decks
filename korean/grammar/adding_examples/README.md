@@ -1,276 +1,227 @@
 # Adding Examples Manually – User Guide
 
+> [!IMPORTANT]
+> **Migration Notice:** This guide describes the **new JSON format** introduced in the latest update.
+> If you are using an older version of the deck (where fields use `|||$$$|||` separators), you **must update your deck** to use this feature.
+>
+> ⚠️ **Important:** When updating your deck, **do not open the Browse window**.  
+> Stay on Anki’s **main screen immediately after launching the app**, otherwise the cards you’re currently viewing **will not be updated correctly**.
+>> **How to update:** Simply download the latest `.apkg` version of the deck and double-click it to import. Select **'Merge Note Types'**. Anki will update the card templates automatically.
+
+> **Note:** The `AllExamples` field is no longer used. After updating, you can safely delete it from your note type if you wish to clean up.
+>
+> **Don't worry:** Re-importing the deck **preserves your progress and scheduling**. You won't lose any reviews!
+
+
 ## Table of Contents
 
 1. [Overview](#overview)
 2. [How to Add Examples](#how-to-add-examples)
-   - [Step-by-Step Instructions](#step-by-step-instructions)
-3. [Field Format](#field-format)
-   - [Structure of One Example](#structure-of-one-example)
+3. [JSON Field Format](#json-field-format)
+   - [Structure](#structure)
    - [Field Breakdown](#field-breakdown)
 4. [Highlighting Grammar Points](#highlighting-grammar-points)
    - [How to Highlight](#how-to-highlight)
-   - [Examples](#examples)
-   - [Important Notes](#important-notes)
-5. [Complete Example](#complete-example)
-6. [More Examples](#more-examples)
-7. [Priority System (Advanced)](#priority-system-advanced)
-8. [Troubleshooting](#troubleshooting)
-9. [Tips](#tips)[text](../../../../../Bureau/kimchi-grammar/README_RandomExamplesRaw.md)
-10. [Common Mistakes to Avoid](#common-mistakes-to-avoid)
-11. [Need Help?](#need-help)
+   - [Escaping Quotes (Critical!)](#escaping-quotes-critical)
+5. [Complete Examples](#complete-examples)
+6. [Troubleshooting](#troubleshooting)
+7. [Need Help?](#need-help)
 
 ---
 
 ## Overview
 
-The `RandomExamplesRaw` field contains all example sentences that can be randomly displayed on the front of your Anki cards. This field is automatically generated when the deck is built, but you can also add or modify examples directly in Anki.
+The `RandomExamplesRaw` field contains all example sentences for the card. **This field is now formatted as standard JSON.**
 
-**Note:** This guide is for users who want to add examples directly in Anki. You don't need access to the source code or build scripts.
+Instead of using special separators like `|||$$$|||`, you must now provide a valid JSON array of objects.
 
 ---
 
 ## How to Add Examples
 
-### Step-by-Step Instructions
-
-1. **Open Anki Browser**
-   - In Anki, press `B` or go to `Tools` → `Browse`
-   
-2. **Find Your Card**
-   - Search for the grammar point you want to modify
-   - Click on the card to select it
-
-3. **Edit the RandomExamplesRaw Field**
-   - Click on the `RandomExamplesRaw` field
-   - Scroll to the end of the field (or beginning if you prefer)
-   - Add your new example following the format below
-
-4. **Save Your Changes**
-   - Save
-   - Close the browser
+1. **Open Anki Browser** (Press `B`)
+2. **Select the Card**
+3. **Find `RandomExamplesRaw`** field
+4. **Edit the JSON array**:
+   - The field starts with `[` and ends with `]`
+   - Each example is an object inside curly braces `{ ... }`
+   - Objects are separated by commas `,`
+5. **Add your new example object** to the list (don't forget the comma after the previous object!)
 
 ---
 
-## Field Format
+## JSON Field Format
 
-The `RandomExamplesRaw` field uses special separators to organize multiple examples:
+### Structure
 
-- **Main separator**: `|||$$$|||` (separates different examples)
-- **Data separator**: `///$$$///` (separates different parts of one example)
-  - **Important:** Always use the complete separator `///$$$///` (three dollar signs `$$$`)
-  - When a field is empty, you still write the separator `///$$$///`
+The field must look like this:
 
-### Structure of One Example
-
-Each example follows this format:
-
-```
-{krHTML}///$$$///{audioFilename}///$$$///{enText}///$$$///{imageHTML}///$$$///{source}///$$$///{priority}
+```json
+[
+  {
+    "kr": "Existing sentence...",
+    "en": "Existing translation...",
+    "source": "kimchi"
+  },
+  {
+    "kr": "YOUR NEW SENTENCE HTML",
+    "en": "YOUR NEW TRANSLATION",
+    "source": "manual",
+    "audio": "optional_filename.mp3",
+    "img": "optional_image_html"
+  }
+]
 ```
 
 ### Field Breakdown
 
-1. **krHTML** - Korean sentence with HTML formatting
-   - This is where you put your Korean sentence
-   - **Important:** Use HTML tags to highlight the grammar point (see [Highlighting Grammar Points](#highlighting-grammar-points) below)
-   - Example: `가족<span class="focus">과</span> 여행을 가고 싶어요.`
+Each example object can have the following properties:
 
-2. **audioFilename** - Audio file name (optional)
-   - Just the filename, like `example.mp3`
-   - Leave empty if no audio: `` (nothing between the separators)
-   - Example: `example_audio.mp3` or empty
+1. **`"kr"` (Required)**
+   - The Korean sentence with HTML highlighting.
+   - Example: `"kr": "한국어를 <span class=\"focus\">공부해요</span>."`
 
-3. **enText** - English translation
-   - The English translation of your Korean sentence
-   - Example: `I want to travel with my family.`
+2. **`"en"` (Required)**
+   - English translation.
+   - Example: `"en": "I study Korean."`
 
-4. **imageHTML** - Image HTML (optional)
-   - Complete `<img>` tag if you have an image
-   - Leave empty if no image: `` (nothing between the separators)
-   - Example: `<img src="example.jpg" style="max-width:100%;">` or empty
+3. **`"source"` (Required)**
+   - Use `"manual"` for your own examples.
+   - Example: `"source": "manual"`
 
-5. **source** - Where the example comes from
-   - Use: `kimchi`, `kgiu`, or `manual` (for examples you add yourself)
-   - Must be lowercase
-   - Example: `kimchi` or `kgiu` or `manual`
+4. **`"audio"` (Optional)**
+   - Filename of the audio file in your collection.media folder.
+   - Example: `"audio": "my_audio_file.mp3"`
 
-6. **priority** - Display priority (optional, usually leave empty)
-   - Most users can leave this empty: `` (nothing between the separators)
-   - Advanced: `kgiu_priority` or `kimchi_priority` (see [Priority System](#priority-system) below)
-   - Example: empty or `kgiu_priority`
+5. **`"img"` (Optional)**
+   - Image HTML tag.
+   - Example: `"img": "<img src=\"my_image.jpg\">"`
 
----
-
-## Highlighting Grammar Points
-
-When you add a Korean sentence, you need to highlight the grammar point so it appears in color on the card.
-
-### How to Highlight
-
-Use HTML `<span>` tags with specific classes:
-
-- **`<span class="focus">...</span>`** - Highlights the main grammar point (red/orange color)
-- **`<span class="green">...</span>`** - Highlights secondary grammar (green color)  
-- **`<span class="blue">...</span>`** - Highlights additional grammar (blue color)
-
-### Examples
-
-**Simple highlighting (most common):**
-```
-한국어를 공부하고 있어<span class="focus">요</span>.
-```
-This highlights "요" as the grammar point.
-
-**Multiple highlights:**
-```
-가족<span class="focus">과</span> <span class="blue">함께</span> 여행을 가고 싶어요.
-```
-This highlights "과" (main grammar) and "함께" (secondary grammar).
-
-### Important Notes
-
-- **Use double quotes**: `class="focus"` (not single quotes)
-- **You must add the tags manually** - there's no automatic highlighting for manually added examples
-- The tags will be properly interpreted when the card is displayed (you may see raw HTML in Anki's editor - that's normal)
-
----
-
-## Complete Example
-
-Here's a complete example you can copy and modify:
-
-```
-|||$$$|||새로운 <span class="focus">예문</span>입니다.///$$$//////$$$///This is a new example.///$$$//////$$$///manual///$$$///
-```
-
-**Breaking it down:**
-- `|||$$$|||` - Separator to add a new example
-- `새로운 <span class="focus">예문</span>입니다.` - Korean sentence with highlighted grammar
-- `///$$$///` - Data separator (always the complete separator `///$$$///`)
-- `` (empty) - No audio file (nothing between separators)
-- `///$$$///` - Data separator
-- `This is a new example.` - English translation
-- `///$$$///` - Data separator
-- `` (empty) - No image (nothing between separators)
-- `///$$$///` - Data separator
-- `manual` - Source (you added this yourself)
-- `///$$$///` - Data separator
-- `` (empty) - No priority (nothing between separators)
-
-**Important:** Always use the complete separator `///$$$///` (three dollar signs `$$$`). When a field is empty, you still write the separator `///$$$///`.
-
----
-
-## More Examples
-
-### Example with Audio
-
-```
-|||$$$|||한국어를 배우고 있어<span class="focus">요</span>.///$$$///korean_audio.mp3///$$$///I am learning Korean.///$$$//////$$$///manual///$$$///
-```
-
-### Example with Image
-
-```
-|||$$$|||친구<span class="focus">와</span> 영화를 봤어요.///$$$//////$$$///I watched a movie with my friend.///$$$///<img src="movie.jpg" style="max-width:100%;">///$$$///manual///$$$///
-```
-
-### Example with Multiple Highlights
-
-```
-|||$$$|||가족<span class="focus">과</span> <span class="blue">함께</span> 여행을 가고 싶어요.///$$$//////$$$///I want to travel with my family.///$$$//////$$$///manual///$$$///
-```
+6. **`"priority"` (Optional)**
+   - Usually empty for manual examples.
+   - Example: `"priority": ""`
 
 ---
 
 ## Priority System (Advanced)
 
-**Most users can skip this section.** The priority system is only needed for merged cards (cards that have both KGIU and Kimchi content).
+**Most users can leave the `"priority"` field empty.**
 
-### What is Priority?
+### What is it?
+This setting is **only for Merged Cards** (cards that contain both KGIU and Kimchi Reader content). It controls which "side" of the card is shown when this specific example is displayed.
 
-Priority controls which side (KGIU or Kimchi) an example displays with on merged cards.
+- **Empty (`""`)**: The card uses its default behavior (usually showing KGIU first, or remembering your last choice).
+- **`"kgiu_priority"`**: Forces the card to switch to the **KGIU view** when this example is shown.
+- **`"kimchi_priority"`**: Forces the card to switch to the **Kimchi Reader view** when this example is shown.
 
-- **No priority** (empty) - Example follows the card's default behavior
-- **`kgiu_priority`** - Always shows with KGIU side
-- **`kimchi_priority`** - Always shows with Kimchi side
+### Why use it?
+Sometimes an example sentence uses specific vocabulary or grammar nuances that are only explained in one of the two sources.
 
-### When to Use Priority
+For example, if KGIU explains a grammar point's formal usage, and Kimchi Reader explains its casual usage:
+- You might tag a formal sentence with `"kgiu_priority"` so the user sees the formal KGIU explanation with it.
+- You might tag a casual sentence with `"kimchi_priority"` so the user sees the casual Kimchi explanation with it.
 
-You typically don't need to set priority. Only use it if:
-- You have a merged card (shows both KGIU and Kimchi content)
-- Your example contains words that only make sense with one specific side
-- The example isn't displaying with the correct side by default
+This ensures the example sentence always matches the context of the explanation shown.
 
-### Example with Priority
+---
 
+## Highlighting Grammar Points
+
+### How to Highlight
+
+Use HTML `<span>` tags within the `"kr"` string:
+
+- **`<span class=\"focus\">...</span>`** - Main grammar point (Required)
+- **`<span class=\"green\">...</span>`** - Secondary grammar
+- **`<span class=\"blue\">...</span>`** - Additional grammar
+
+### Escaping Quotes (Critical!)
+
+Because you are inside a JSON string (which is already wrapped in double quotes `"`), **you MUST escape internal double quotes** with a backslash `\`.
+
+❌ **WRONG:**
+```json
+"kr": "한국어를 <span class="focus">공부해요</span>."
 ```
-|||$$$|||가족<span class="focus">과</span> <span class="blue">함께</span> 여행을 가고 싶어요.///$$$//////$$$///I want to travel with my family.///$$$//////$$$///kgiu///$$$///kgiu_priority
+*(Result: Invalid JSON, will break the card)*
+
+✅ **CORRECT:**
+```json
+"kr": "한국어를 <span class=\"focus\">공부해요</span>."
 ```
+
+---
+
+## Complete Examples
+
+### Simple Example
+```json
+{
+  "kr": "저는 <span class=\"focus\">학생</span>입니다.",
+  "en": "I am a student.",
+  "source": "manual"
+}
+```
+
+### Example with Audio
+```json
+{
+  "kr": "한국어를 <span class=\"focus\">배워요</span>.",
+  "audio": "korean_sentence_01.mp3",
+  "en": "I learn Korean.",
+  "source": "manual"
+}
+```
+
+### Example with Image
+```json
+{
+  "kr": "사과가 <span class=\"focus\">이/가</span> 있어요.",
+  "en": "There is an apple.",
+  "img": "<img src=\"apple.jpg\">",
+  "source": "manual"
+}
+```
+
+### Full Field Example
+
+If your field already has one example, adding a new one looks like this:
+
+```json
+[
+  {
+    "kr": "Existing sentence...",
+    "en": "Existing translation...",
+    "source": "kimchi"
+  },
+  {
+    "kr": "NEW SENTENCE <span class=\"focus\">HERE</span>.",
+    "en": "NEW TRANSLATION.",
+    "source": "manual"
+  }
+]
+```
+
+**Note the comma `,` after the first closing brace `}`!**
 
 ---
 
 ## Troubleshooting
 
-### My example doesn't appear
+### Card shows "JSON PARSING ERROR"
+This means you made a syntax error. Check:
+1. **Commas**: Did you forget a comma between objects? Or did you add an extra comma after the last object?
+2. **Quotes**: Did you forget to escape quotes inside strings (`\"` instead of `"`)?
+3. **Brackets**: Does the field start with `[` and end with `]`?
 
-**Check:**
--  All separators are present: `|||$$$|||` and `///$$$///`
--  The format is exactly correct (copy from examples above)
--  You saved the card (Ctrl+S or Cmd+S)
--  The `source` field is lowercase: `kimchi`, `kgiu`, or `manual`
-
-### The grammar point isn't highlighted
-
-**Check:**
--  You used `<span class="focus">` (not just `<span>`)
--  You used double quotes: `class="focus"` (not single quotes)
--  The tags are properly closed: `</span>`
--  You can see the raw HTML in Anki's editor (that's normal - it will work on the card)
-
-### Audio doesn't play
-
-**Check:**
--  The filename is correct (just the name, like `audio.mp3`)
--  The audio file exists in Anki's media folder
--  The file is referenced in the card's `MediaReferences` field (Anki should do this automatically when you add media)
-
-### The example shows raw HTML tags
-
-**This is normal!** In Anki's field editor, you'll see the raw HTML tags. When you review the card, the tags will be properly interpreted and the grammar point will be highlighted in color.
-
----
-
-## Tips
-
-1. **Start simple** - Add one example first, test it, then add more
-2. **Copy the format** - Use the examples above as templates
-3. **Check your work** - Review a card after adding examples to make sure they appear correctly
-4. **Use `manual` as source** - When adding your own examples, use `manual` as the source so you can filter them later if needed
-5. **Keep it organized** - Add new examples at the end of the field to keep them organized
-
----
-
-## Common Mistakes to Avoid
-
-❌ **Missing separators** - Every example needs `|||$$$|||` at the start and `///$$$///` between fields
-
-❌ **Wrong quotes** - Use `class="focus"` not `class='focus'`
-
-❌ **Forgetting to highlight** - Don't forget to add `<span class="focus">` around the grammar point
-
-❌ **Wrong source format** - Use lowercase: `kimchi` not `KIMCHI` or `Kimchi`
-
-❌ **Extra spaces** - Don't add spaces around separators (they should be exactly as shown)
+### Example doesn't show up
+- Ensure `"source"` is set.
+- Check if you filtered sources in the card configuration.
 
 ---
 
 ## Need Help?
 
-If you're having trouble:
-1. Double-check your format against the examples above
-2. Make sure all separators are exactly correct
-3. Try adding a simple example first (no audio, no image, no priority)
+If you're stuck, use a [JSON Validator](https://jsonlint.com/) to check your syntax.
 
-If you have any questions or issues, don't hesitate to contact me on Discord: **mathieu.exe**
+Contact: **mathieu.exe** on Discord.

@@ -268,6 +268,34 @@ These options are found in the **Front Template** JavaScript section:
 - `true` (default): Display audio button
 - `false`: Hide audio button
 
+**Option 13: GRAMMAR POINT MODE (FRONT)**
+- `0` (default): Default with Spoiler + Override (hidden behind button, unless example has override)
+- `1`: Always Visible (No Spoiler)
+- `2`: Never Visible
+- `3`: Spoiler Always (No Override) - always hidden behind button
+
+**Option 14: GRAMMAR POINT SIZE (FRONT)**
+- Font size in pixels for the grammar point name on the front card (default: 20)
+
+**Option 15: GRAMMAR POINT POSITION**
+- `0` (default): Below the example
+- `1`: Above the example
+
+**Option 16: SEPARATOR LINE MODE**
+- `0` (default): No line
+- `1`: Always visible (static)
+- `2`: Visible only when grammar point is shown (dynamic)
+
+**Option 17: SHORTCUTS CONFIGURATION (PC)**
+- `AUDIO_REPLAY_KEYS`: Keys to replay audio (default `['R']`)
+- `GRAMMAR_REVEAL_KEYS`: Keys to toggle grammar spoiler (default `['h']`)
+- **Note:** Do not assign keys that conflict with Anki's native shortcuts.
+
+**Option 18: SHORTCUTS CONFIGURATION (MOBILE)**
+- `MOBILE_USER_ACTION_INDEX`: User Action index for Audio Replay (default `1`)
+- `MOBILE_REVEAL_ACTION_INDEX`: User Action index for Grammar Reveal (default `2`)
+- **Note:** Assigning a User Action here maps it to the corresponding gesture/button in AnkiDroid/AnkiMobile. This overrides any previous assignment for that action number.
+
 </details>
 
 <details>
@@ -430,37 +458,29 @@ Each card contains 12 fields of information:
 5. **Meaning** - Explanation of what it means
 6. **Examples** - All example sentences (HTML, collapsible)
 7. **Details** - Full detailed explanation (HTML markdown)
-8. **RandomExamplesRaw** - Raw data for random sentence selection
+7. **Details** - Full detailed explanation (HTML markdown)
+8. **RandomExamplesRaw** - JSON data containing ALL example sentences (used for both random selection and "All Examples" list)
 
 <details>
 <summary><strong>Adding Manual Examples</strong> (Click to expand)</summary>
 
-> **For a complete guide:** See **[How to add examples](https://github.com/marbaret/anki-decks/blob/main/korean/grammar/adding_examples/README.md)** for detailed instructions, examples, and troubleshooting.
+> **For a complete guide:** See **[How to add examples](https://github.com/marbaret/anki-decks/blob/main/korean/grammar/adding_examples/README.md)** for detailed instructions on the new JSON format.
 
-You can add your own examples directly in Anki by editing the `RandomExamplesRaw` field. However, there are important things to know about highlighting grammar points:
+You can add your own examples directly in Anki by editing the `RandomExamplesRaw` field. **The format has changed to standard JSON.**
 
 
 **How to highlight the grammar point:**
 
-1. **Use HTML `<span>` tags directly** in the `RandomExamplesRaw` field:
-   - `<span class="focus">...</span>` - Highlights the main grammar point (red/orange color)
-   - `<span class="green">...</span>` - Highlights secondary grammar (green color)
-   - `<span class="blue">...</span>` - Highlights additional grammar (blue color)
-
-2. **Format to follow:**
+**Structure:**
+```json
+[
+  {
+    "kr": "Korean sentence with <span class=\"focus\">HTML</span>",
+    "en": "English translation",
+    "source": "manual"
+  }
+]
 ```
-|||$$$|||{krHTML}///$$$///{audioFilename}///$$$///{enText}///$$$///{imageHTML}///$$$///{source}///$$$///{priority}
-```
-
-3. **Example of adding:**
-```
-|||$$$|||새로운 <span class="focus">예문</span>입니다.///$$$//////$$$///This is a new example.///$$$//////$$$///manual///$$$///
-```
-
-4. **Important notes:**
-   - The HTML tags will be automatically decoded if Anki escapes them (e.g., `&lt;span&gt;` becomes `<span>`)
-   - You may see the raw HTML tags in Anki's field editor - this is normal. The tags will be properly interpreted when the card is displayed
-   - Make sure to use double quotes for attributes: `class="focus"` (not single quotes)
 
 </details>
 
