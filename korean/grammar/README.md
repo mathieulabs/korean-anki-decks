@@ -449,17 +449,31 @@ If you're already familiar with beginner grammar:
 
 ### Card Fields
 
-Each card contains 12 fields of information:
+Each card contains **23 fields** of information:
 
-1. **GrammarPoint** - Name of the grammar pattern (formatted HTML)
-2. **DefinitionName** - Short label for this meaning (e.g., "Cause and Effect")
-3. **EnglishAlt** - Alternative English phrases
-4. **Frequency** - How common this grammar is (ranking number)
-5. **Meaning** - Explanation of what it means
-6. **Examples** - All example sentences (HTML, collapsible)
-7. **Details** - Full detailed explanation (HTML markdown)
-7. **Details** - Full detailed explanation (HTML markdown)
-8. **RandomExamplesRaw** - JSON data containing ALL example sentences (used for both random selection and "All Examples" list)
+1. **GlobalGrammarPoint** - Name used for the Anki browser list.
+2. **KGIUGrammarPoint** - Grammar point name (KGIU source).
+3. **KGIUDefinitionName** - Specific meaning name (KGIU source).
+4. **KGIUEnglishAlt** - English alternatives (KGIU source).
+5. **KGIUMeaning** - Concise explanation (KGIU source).
+6. **KGIUDetails** - Full detailed lesson content (KGIU source).
+7. **KimchiGrammarPoint** - Grammar point name (Kimchi source).
+8. **KimchiDefinitionName** - Specific meaning name (Kimchi source).
+9. **KimchiEnglishAlt** - English alternatives (Kimchi source).
+10. **KimchiFrequency** - Usage frequency ranking.
+11. **KimchiMeaning** - Concise explanation (Kimchi source).
+12. **KimchiDetails** - Full detailed content (Kimchi source).
+13. **RandomExamplesRaw** - Contains JSON data with every sentence, translation, and metadata.
+14. **KimchiSlug** - Unique identifier for the Kimchi Reader reference.
+15. **MediaReferences** - Internal field used by Anki for audio file management.
+16. **Comparison** - Content for the "Comparison" section.
+17. **Inheritance** - Conjugation rules and usage notes.
+18. **Related** - Links to related grammar patterns.
+19. **URL** - Direct link to the source lesson.
+20. **KGIULevel** - Difficulty level (Beginner/Intermediate/Advanced).
+21. **KGIUOrder** - Natural sort order from the KGIU textbook.
+22. **PrioritizeKimchi** - Flag to determine default view on merged cards.
+23. **Frequency** - Duplicate ranking for legacy template compatibility.
 
 <details>
 <summary><strong>Adding Manual Examples</strong> (Click to expand)</summary>
