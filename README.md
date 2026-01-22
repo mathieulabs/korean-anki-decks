@@ -38,8 +38,7 @@ If you like the decks and want to show some support, you can rate it on Ankiweb 
 
 <br>
 
-> [!IMPORTANT]
-> **Important:** When updating your deck, **do not open the Browse window**.  
+> ⚠️⚠️⚠️ **Important:** When updating your deck, **do not open the Browse window**.  
 > Stay on Anki’s **main screen immediately after launching the app**, otherwise the cards you’re currently viewing **will not be updated correctly**.
 
 **How to update:**
