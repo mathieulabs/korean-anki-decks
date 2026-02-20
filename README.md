@@ -224,13 +224,15 @@ To configure it:
 This deck has been created using the GitHub repo from **[Kimchi Reader's](https://kimchi-reader.app/grammar) grammar section**.  
 And all the lesson from Korean Grammar in Use books.
 
-**I strongly encourage you to try out [Kimchi Reader](https://kimchi-reader.app/) !**  
-It's the most amazing tool I've used to learn Korean and the best way to build a vocab deck using its sentence mining feature. 
-There is a 1-week free trial, so honestly just give it a try. If you'd like to extend your trial by one week, you can use my affiliate code: **3QYV7WZN2Z**
-There is an amazing **[Discord server](https://discord.gg/abRkZ2hhSA)** with people who will help you if you have any questions.
+**I strongly encourage you to try out [Kimchi Reader](https://kimchi-reader.app/) !**   
+It's the most amazing tool I've used to learn Korean and the best way to build a vocab deck using its sentence mining feature.   
+ 
+There is a 1-week free trial, so honestly just give it a try. If you'd like to extend your trial by one week, you can use my affiliate code: **3QYV7WZN2Z** 
+ 
+There also is an amazing **[Discord server](https://discord.gg/abRkZ2hhSA)** with people who will help you if you have any questions. 
 
-- **[Kimchi Reader Grammar page](https://kimchi-reader.app/grammar)**  
-- **[Kimchi Reader Grammar GitHub repo](https://github.com/Alaanor/kimchi-grammar)**
+- **[Kimchi Reader Grammar page](https://kimchi-reader.app/grammar)**   
+- **[Kimchi Reader Grammar GitHub repo](https://github.com/Alaanor/kimchi-grammar)** 
 
 **Disclaimer**
 
