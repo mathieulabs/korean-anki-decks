@@ -47,8 +47,6 @@ If you like the decks and want to show some support, you can rate it on Ankiweb 
 
 Anki will update the card templates automatically.
 
-> **Note (Grammar Deck only):** The `AllExamples` field is no longer used. After updating the **Grammar Deck**, you can safely delete it from the note type if you want to clean things up.
-
 > **Don't worry:** Re-importing the decks **preserves your progress and scheduling**. You won't lose any reviews!
 
 </details>
