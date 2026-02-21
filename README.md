@@ -155,11 +155,7 @@ For full documentation, see the dedicated README:
     <td><img src="korean/hanja/screenshots/back1.png"></td>
     <td><img src="korean/hanja/screenshots/back2.png"></td>
   </tr>
-</table>
-
-This deck helps build **recognition and understanding of commonly used Hanja**.
-
----
+</table> 
 
 ### Features
 
