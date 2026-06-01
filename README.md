@@ -18,7 +18,7 @@
 ##  Download
 
 * **Grammar Deck**: **[Download](https://drive.google.com/file/d/1dVl-IAjqkV1wrwWtc2UdZ7jpZtOeUA3B/view?usp=drive_link)**
-* **Hanja Deck**: **[Download](https://drive.google.com/file/d/1sgeYeMjTg9cCw8v90FMjFrDEMKfFxgL1/view?usp=drive_link)**
+* **Hanja Deck**: **[Download](https://drive.google.com/file/d/1U3XK11m8uKoc-kQqf9AyBVE9xNNEnDHS/view?usp=drive_link)**
 
 ### Ankiweb :
 
