@@ -243,9 +243,9 @@ For example, there are points with only one example sentence, and it would be am
 ### Hanja Deck 
 
 This deck was created by merging **Retro's Hanja deck**, which can be found **[here](https://drive.google.com/drive/folders/1FemoEaheHiJy2eEtTQXGU_bNj8yQipjo?usp=sharing)**, and another deck that I unfortunately can’t find on AnkiWeb anymore. 
-I also added fields containing data scraped from **[Wiktionary](https://en.wiktionary.org/wiki/Wiktionary:Main_Page)**. 
+I also added fields containing data scraped from **[Wiktionary](https://en.wiktionary.org/wiki/Wiktionary:Main_Page)**.
 
-For this deck, I only merged existing resources; I did not create any of the content myself. 
+For this deck, I only merged existing resources; I did not create any of the content myself.  
 All credits go to Retro, the creator of the other deck, and Wiktionary. 
 
 Find **Retro's Blog** **[here](https://retrolearnskorean.blogspot.com/)**. 
