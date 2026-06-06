@@ -237,19 +237,18 @@ The [Kimchi Reader Grammar GitHub repo](https://github.com/Alaanor/kimchi-gramma
 For every update of the repo, I’ll update the Grammar deck, so you’ll just have to download it again to have the latest version.
 
 If you have the knowledge and time to do so, I really encourage you to **contribute** to the [repo](https://github.com/Alaanor/kimchi-grammar).  
-For example, there are points with only **one example sentence**, and it would be amazing to have **multiple examples** for the **random sentence feature** of the deck.
+For example, there are points with only one example sentence, and it would be amazing to have multiple examples for the random sentence feature of the deck.
 
 
-### Hanja Deck
+### Hanja Deck 
 
-This deck was created by merging **Retro's Hanja deck**, which can be found **[here](https://drive.google.com/drive/folders/1FemoEaheHiJy2eEtTQXGU_bNj8yQipjo?usp=sharing)**  
-and another deck that I unfortunately can’t find again on AnkiWeb.  
+This deck was created by merging **Retro's Hanja deck**, which can be found **[here](https://drive.google.com/drive/folders/1FemoEaheHiJy2eEtTQXGU_bNj8yQipjo?usp=sharing)**, and another deck that I unfortunately can’t find on AnkiWeb anymore. 
+I also added fields containing data scraped from **[Wiktionary](https://en.wiktionary.org/wiki/Wiktionary:Main_Page)**. 
 
-I also added fields with data scraped from **[Wiktionary](https://en.wiktionary.org/wiki/Wiktionary:Main_Page)**.  
+For this deck, I only merged existing resources; I did not create any of the content myself. 
+All credits go to Retro, the creator of the other deck, and Wiktionary. 
 
-All credits go to Retro and to the creator of the other deck.  
-
-Find **Retro's Blog site** **[here](https://retrolearnskorean.blogspot.com/)**.
+Find **Retro's Blog** **[here](https://retrolearnskorean.blogspot.com/)**. 
 
 ## Feedback
 
