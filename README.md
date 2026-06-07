@@ -245,7 +245,7 @@ For example, there are points with only one example sentence, and it would be am
 This deck was created by merging **Retro's Hanja deck**, which can be found **[here](https://drive.google.com/drive/folders/1FemoEaheHiJy2eEtTQXGU_bNj8yQipjo?usp=sharing)**, and another deck that I unfortunately can’t find on AnkiWeb anymore. 
 I also added fields containing data scraped from **[Wiktionary](https://en.wiktionary.org/wiki/Wiktionary:Main_Page)**.
 
-After reviewing the deck myself, I removed some very problematic images from Retro's Hanja deck (those images originally come from a book called 날로 먹는 한자). Please let me know if you find any I missed, and I’ll delete them right away. 
+After reviewing the deck myself, I removed some very offensive images from Retro's Hanja deck (those images originally come from a book called 날로 먹는 한자). Please let me know if you find any I missed, and I’ll delete them right away. 
 
 For this deck, I only merged existing resources; I did not create any of the content myself.  
 All credits go to Retro, the creator of the other deck, and Wiktionary. 
